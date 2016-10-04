@@ -1,7 +1,5 @@
-# KB
-
-## Objetivo
+# Objetivo
 O KB foi destinado a anotações e lembranças relacionadas a desenvolvimento. 
 
-## Índice
+# Índice
 
