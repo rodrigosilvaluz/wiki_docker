@@ -1,1 +1,1 @@
-[Code](https://github.com/luizcarlosfaria/kb)
+[Código](https://github.com/luizcarlosfaria/kb)
