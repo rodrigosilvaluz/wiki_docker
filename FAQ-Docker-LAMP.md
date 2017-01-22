@@ -15,6 +15,9 @@ Imagens PHP:
 Imagens MYSQL:
 * [MySQL @ Docker Hub](https://hub.docker.com/_/mysql/)
 
+LAMP Com Docker Compose:
+* [docker-compose-lamp @ tkyk](https://github.com/tkyk/docker-compose-lamp)
+* [docker-compose-lamp @ wrender](https://github.com/wrender/docker-compose-lamp)
 
 
 
