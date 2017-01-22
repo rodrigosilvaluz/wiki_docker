@@ -15,4 +15,4 @@ O KB foi destinado a guardar uma base de conhecimento variada contendo soluçõe
 
 [[Posso usar o Docker como servidor de aplicação, fazendo refresh do meu código que está em um path mapeado?|Usando-Docker-como-um-Servidor]]
 
-[[Qual a melhor estratégia para criar uma imagem de uma aplicação?|Qual-a-melhor-estratégia-para-criar-uma-imagem-de-uma-aplicação%3F]]
+[[Qual a melhor estratégia para criar uma imagem de uma aplicação?|Qual-a-melhor-estratégia-para-criar-uma-imagem-de-uma-aplicação?]]
