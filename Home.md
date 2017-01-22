@@ -7,4 +7,4 @@ O KB foi destinado a guardar uma base de conhecimento variada contendo soluçõe
 
 ### Perguntas e Respostas
 
-[[Docker for Windows|docker-for-windows]]
+[[Docker for Windows vs Docker for Linux|Docker-no-Windows-vs-Docker-no-Linux]]
