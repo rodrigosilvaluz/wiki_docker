@@ -9,6 +9,8 @@ No **Windows**, DOCKER (docker.exe) fica no Windows, enquanto DOCKERD fica no li
 
 # Linux Containers
 
+São containers baseados em binários linux
+
 ## Linux Containers no Windows 
 
 Docker for Windows obrigatoriamente utiliza Hyper-v, diferente do Docker Toolbox, que usava Oracle Virtualbox. Ao habilitar o Hyper-v, o Virtualbox deixa de funcionar.
@@ -22,6 +24,8 @@ Com o avanço do [Windows Subsystem for Linux](http://luizcarlosfaria.net/blog/w
 No Linux a instalação do Docker acontece via gerenciador de pacotes ou download e execução de um script genérico de setup [**Leia mais**](https://docs.docker.com/engine/installation/).
 
 # Windows Containers
+
+São containers baseados em binários windows
 
 ## Windows Containers no Windows
 
