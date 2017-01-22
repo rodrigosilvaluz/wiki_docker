@@ -8,3 +8,5 @@ O KB foi destinado a guardar uma base de conhecimento variada contendo soluçõe
 ### Perguntas e Respostas
 
 [[Docker for Windows vs Docker for Linux|Docker-no-Windows-vs-Docker-no-Linux]]
+
+[[Posso criar uma imagem LAMP? (Linux, Apache, MySQL and PHP)|FAQ-Docker-LAMP]]
