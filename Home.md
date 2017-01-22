@@ -5,5 +5,6 @@ O KB foi destinado a guardar uma base de conhecimento variada contendo soluçõe
 
 ## Docker 
 
-### Q&A
-[[Setup|docker-setup]]
+### Perguntas e Respostas
+
+[[Docker for Windows|docker-for-windows]]
