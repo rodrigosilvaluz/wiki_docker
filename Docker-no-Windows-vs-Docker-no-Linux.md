@@ -17,11 +17,15 @@ Docker for Windows obrigatoriamente utiliza Hyper-v, diferente do Docker Toolbox
 
 Mesmo com Windows Containers, não é possível executar Containers Linux no Windows sem Virtualização (antigamente com Virtualbox, hoje com Hyper-v).
 
-Com o avanço do [Windows Subsystem for Linux](http://luizcarlosfaria.net/blog/windows-subsystem-for-linux/) HIPOTETICAMENTE poderíamos vislumbrar a execução do Docker linux, sob o kernel do windows, emulando um kernel linux via adapters. Mas isso é apenas um sonho. Não há o menor direcionamento da Microsoft que aponte ou sequer sugira que isso será possível um dia.
+Com o avanço do [Windows Subsystem for Linux](http://luizcarlosfaria.net/blog/windows-subsystem-for-linux/) _HIPOTETICAMENTE_ poderíamos vislumbrar a execução do containers linux, sob o kernel do windows, emulando o kernel linux com o WSL. Mas isso é apenas um sonho. Não há o menor direcionamento da Microsoft que aponte ou sequer sugira que isso será possível um dia.
+
+[**Leia mais**](https://blogs.msdn.microsoft.com/wsl/)
 
 ## Linux Containers no Linux
 
-No Linux a instalação do Docker acontece via gerenciador de pacotes ou download e execução de um script genérico de setup [**Leia mais**](https://docs.docker.com/engine/installation/).
+No Linux a instalação do Docker acontece via gerenciador de pacotes ou download e execução de um script genérico de setup.
+
+[**Leia mais**](https://docs.docker.com/engine/installation/)
 
 # Windows Containers
 
@@ -33,9 +37,13 @@ Os Windows Containers são containers baseados em kernel do Windows. Com ele pod
 
 Windows Containers não rodam containers Linux.
 
-O cliente do Docker (docker.exe) é capaz de gerenciar containers linux e containers windows [**Leia mais**](https://docs.docker.com/docker-for-windows/#/switch-between-windows-and-linux-containers).
+O cliente do Docker (docker.exe) é capaz de gerenciar containers linux e containers windows. 
 
-Windows Containers podem ser executados com Hyper-v, é um isolamento opcional e esses tipo de containers são chamados de **HYPER-V CONTAINERS**.
+[**Leia mais**](https://docs.docker.com/docker-for-windows/#/switch-between-windows-and-linux-containers)
+
+Windows Containers podem ser executados com Hyper-v, é um isolamento opcional e esses tipo de containers são chamados de **HYPER-V CONTAINERS**. 
+
+[**Leia mais**](https://docs.microsoft.com/en-us/virtualization/windowscontainers/manage-containers/hyperv-container)
 
 ## Windows Containers no Linux
 
