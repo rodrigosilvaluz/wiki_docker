@@ -19,13 +19,19 @@ Mesmo com Windows Containers, não é possível executar Containers Linux no Win
 
 > Com o avanço do [Windows Subsystem for Linux](http://luizcarlosfaria.net/blog/windows-subsystem-for-linux/) _HIPOTETICAMENTE_ poderíamos vislumbrar a execução do containers linux, sob o kernel do windows, emulando o kernel linux com o WSL. Mas isso é apenas um sonho. Não há o menor direcionamento da Microsoft que aponte ou sequer sugira que isso será possível um dia.
 >
-> [**Leia mais**](https://blogs.msdn.microsoft.com/wsl/)
+> 
+
+**Leia mais**:
+* [WSL Blog](https://blogs.msdn.microsoft.com/wsl/)
+* [Ubuntu userpsace for Windows Developers @ ubuntu.com](http://insights.ubuntu.com/2016/03/30/ubuntu-on-windows-the-ubuntu-userspace-for-windows-developers/)
+* [Developers can run Bash Shell and user-mode Ubuntu Linux binaries on Windows 10 @ SCOTT HANSELMAN blog](http://www.hanselman.com/blog/DevelopersCanRunBashShellAndUsermodeUbuntuLinuxBinariesOnWindows10.aspx)
 
 ## Linux Containers no Linux
 
 No Linux a instalação do Docker acontece via gerenciador de pacotes ou download e execução de um script genérico de setup.
 
-[**Leia mais**](https://docs.docker.com/engine/installation/)
+**Leia mais:**
+* [Instalação do Docker Engine](https://docs.docker.com/engine/installation/)
 
 # Windows Containers
 
@@ -39,11 +45,13 @@ Windows Containers não rodam containers Linux.
 
 O cliente do Docker (docker.exe) é capaz de gerenciar containers linux e containers windows. 
 
-[**Leia mais**](https://docs.docker.com/docker-for-windows/#/switch-between-windows-and-linux-containers)
+**Leia mais:**
+* [Switch between Windows and Linux containers com Docker for Windows](https://docs.docker.com/docker-for-windows/#/switch-between-windows-and-linux-containers)
 
 Windows Containers podem ser executados com Hyper-v, é um isolamento opcional e esses tipo de containers são chamados de **HYPER-V CONTAINERS**. 
 
-[**Leia mais**](https://docs.microsoft.com/en-us/virtualization/windowscontainers/manage-containers/hyperv-container)
+**Leia mais:**
+* [Hyper-V Container](https://docs.microsoft.com/en-us/virtualization/windowscontainers/manage-containers/hyperv-container)
 
 ## Windows Containers no Linux
 
