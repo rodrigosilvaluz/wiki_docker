@@ -35,6 +35,8 @@ Windows Containers não rodam containers Linux.
 
 O cliente do Docker (docker.exe) é capaz de gerenciar containers linux e containers windows [**Leia mais**](https://docs.docker.com/docker-for-windows/#/switch-between-windows-and-linux-containers).
 
+Windows Containers podem ser executados com Hyper-v, é um isolamento opcional e esses tipo de containers são chamados de **HYPER-V CONTAINERS**.
+
 ## Windows Containers no Linux
 
 Não existe! 
