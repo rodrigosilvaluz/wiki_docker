@@ -1,17 +1,15 @@
-#Docker no windows vs Docker no linux
-
 É recomendado que leia a [Documentação Oficial](https://docs.docker.com/docker-for-windows/)
 
-## Geral
+# Geral
 Docker é dividido em **cliente** e **servidor**, respectivamente **DOCKER** e **DOCKERD**.
 
 No **Linux**, ambos podem estar na mesma máquina.
 
 No **Windows**, DOCKER (docker.exe) fica no Windows, enquanto DOCKERD fica no linux, **em uma Virtual Machine Hyper-V**.
 
-## Linux Containers
+# Linux Containers
 
-### Linux Containers no Windows 
+## Linux Containers no Windows 
 
 Docker for Windows obrigatoriamente utiliza Hyper-v, diferente do Docker Toolbox, que usava Oracle Virtualbox. Ao habilitar o Hyper-v, o Virtualbox deixa de funcionar.
 
@@ -19,11 +17,11 @@ Mesmo com Windows Containers, não é possível executar Containers Linux no Win
 
 Com o avanço do [Windows Subsystem for Linux](http://luizcarlosfaria.net/blog/windows-subsystem-for-linux/) HIPOTETICAMENTE poderíamos vislumbrar a execução do Docker linux, sob o kernel do windows, emulando um kernel linux via adapters. Mas isso é apenas um sonho. Não há o menor direcionamento da Microsoft que aponte ou sequer sugira que isso será possível um dia.
 
-### Linux Containers no Linux
+## Linux Containers no Linux
 
 No Linux a instalação do Docker acontece via gerenciador de pacotes ou download e execução de um script genérico de setup [**Leia mais**](https://docs.docker.com/engine/installation/).
 
-## Windows Containers
+# Windows Containers
 
 ## Windows Containers no Windows
 
