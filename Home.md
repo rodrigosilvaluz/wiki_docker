@@ -13,4 +13,4 @@ O KB foi destinado a guardar uma base de conhecimento variada contendo soluçõe
 
 [[Download de imagens está lento. O que fazer?|Download-lento-de-Imagens]]
 
-[[Posso usar o Docker como servidor de aplicação, fazendo refresh do meu código que está em um path mapeado?|Usando-Docker-como-um-servidor]]
+[[Posso usar o Docker como servidor de aplicação, fazendo refresh do meu código que está em um path mapeado?|Usando-Docker-como-um-Servidor]]
