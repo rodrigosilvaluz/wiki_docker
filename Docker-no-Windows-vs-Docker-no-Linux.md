@@ -17,7 +17,7 @@ Docker for Windows obrigatoriamente utiliza Hyper-v, diferente do Docker Toolbox
 
 Mesmo com Windows Containers, não é possível executar Containers Linux no Windows sem Virtualização (antigamente com Virtualbox, hoje com Hyper-v).
 
-> Com o avanço do [Windows Subsystem for Linux](http://luizcarlosfaria.net/blog/windows-subsystem-for-linux/) _HIPOTETICAMENTE_ poderíamos vislumbrar a execução do containers linux, sob o kernel do windows, emulando o kernel linux com o WSL. Mas isso é apenas um sonho. Não há o menor direcionamento da Microsoft que aponte ou sequer sugira que isso será possível um dia.
+> Com o avanço do [Windows Subsystem for Linux](http://luizcarlosfaria.net/blog/windows-subsystem-for-linux/) _HIPOTETICAMENTE_ poderíamos vislumbrar a execução do containers linux, sob o kernel do windows, emulando o kernel linux com o WSL. Mas isso é apenas um sonho. Não há o menor direcionamento da Microsoft que aponte ou sequer sugira que isso será possível um dia. Hoje mesmo implementando Kernel 4.x não é possível.
 >
 > 
 
@@ -56,3 +56,24 @@ Windows Containers podem ser executados com Hyper-v, é um isolamento opcional e
 ## Windows Containers no Linux
 
 Não existe! 
+****
+
+# Resumo
+
+## O que **não** vai acontecer!
+
+* Rodar IIS no Linux
+* Rodar SQL Server 2000, 2005, 2008 ou 2012 no Linux
+* Rodar .NET Framewok Apps 2.0, 3.0, 3.5, 4.*, no Linux (há uma exceção, em relação ao .NET Standard, vale a pena ler detalhadamente a documentação)
+* Realizar o build de uma imagem e usá-la no windows *E* no linux
+
+## O que **É POSSÍVEL** fazer
+
+1. Rodar Imagens Windows no Windows.
+2. Rodar Imagens Linux no Linux.
+3. Para os produtos/ferramentas/sdk's que possuem distribuições para Windows e Linux, escolher qual imagem usar de acordo com o tipo de host que pretende usar.
+4. Para projetos .NET Core, gerar 2 imagens (windows e linux) e escolher em qual host rodar!
+5. Para projetos .NET Framewok Apps 2.0, 3.0, 3.5, 4.* rodar em Windows Containers. Sob a imagem do Nano Server ou do Server Core.
+6. Para projetos Java, Node, Python (semelhante a item 3).
+7. Rodar SQL Server **2016** no Linux
+
