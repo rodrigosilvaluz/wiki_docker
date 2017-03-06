@@ -1,3 +1,5 @@
+# "Posso criar uma única imagem LAMP?"
+
 Pode, mas está errado fazê-lo.
 
 Se você é de desenvolvimento, deve estar familiarizado com o conceito de [SRP](https://en.wikipedia.org/wiki/Single_responsibility_principle). Imagens docker devem seguir o mesmo princípio. 
