@@ -1,19 +1,36 @@
 É recomendado que leia a [Documentação Oficial](https://docs.docker.com/docker-for-windows/)
 
 # Geral
-Docker é dividido em **cliente** e **servidor**, respectivamente **DOCKER** e **DOCKERD**.
 
-No **Linux**, ambos podem estar na mesma máquina.
+Docker é dividido em **cliente** e **servidor**, no linux isso fica claro com os binários **DOCKER** e **DOCKERD**.
 
-No **Windows**, DOCKER (docker.exe) fica no Windows, enquanto DOCKERD fica no linux, **em uma Virtual Machine Hyper-V**.
+Ao analisar os tipos de containers existentes no universo do Docker, temos de ter em mente 2 elementos:
+
+* OSType: Windows, Linux
+* Architecture: x86_64 e armv7l
+
+Que geram as seguintes variações OSType/Architecture:
+* Linux/x86_64
+* Linux/armv7l
+* Windows/x86_64 
+
+**A combinação entre OSType e Architecture cria uma segmentação forte entre os tipos de containers. Containers criados para um determinado OSType/Architecture são incompatíveis com qualquer outra variação de OSType ou Architecture** 
+
+Essa incompatibilidade surge pois cada variação OSType/Architecture precisa de dependências específicas do seu Kernel.
+
+Como resultado, essa característica faz com que:
+* Containers de *OSType* "linux" sejam incompatíveis com servidores de *OSType* "windows". 
+* Containers de *OSType* "linux" e *arquitetura* "x86_64" sejam incompatíveis com containers do mesmo *OSType* mas *arquitetura* "armv7l"
+
+Essa incompatibilidade não está no Docker, mas sim na arquitetura do Kernel de cada uma dessas variações.
 
 # Linux Containers
 
-São containers baseados em binários linux
+São containers baseados em binários linux.
 
 ## Linux Containers no Windows 
 
-Docker for Windows obrigatoriamente utiliza Hyper-v, diferente do Docker Toolbox, que usava Oracle Virtualbox. Ao habilitar o Hyper-v, o Virtualbox deixa de funcionar.
+[Docker for Windows](https://docs.docker.com/docker-for-windows/install/) utiliza OBRIGATORIAMENTE Hyper-v para hospedar uma máquina virtual Linux, onde seus containers serão executados. Diferente do Docker Toolbox que usava Oracle Virtualbox, o [Docker for Windows](https://docs.docker.com/docker-for-windows/install/) utiliza o Microsoft Hyper-v. Note que ao habilitar o Hyper-v, o Virtualbox deixa de funcionar.
 
 Mesmo com Windows Containers, não é possível executar Containers Linux no Windows sem Virtualização (antigamente com Virtualbox, hoje com Hyper-v).
 
@@ -29,6 +46,10 @@ Mesmo com Windows Containers, não é possível executar Containers Linux no Win
 ## Linux Containers no Linux
 
 No Linux a instalação do Docker acontece via gerenciador de pacotes ou download e execução de um script genérico de setup.
+
+## Linux Containers no Raspberry Pi
+
+Embora também sejam de OSType Linux, binários para Raspberry PI precisam ter sido compilados para arquitetura ARM, no caso do Raspberry Pi 3, armv7l.
 
 **Leia mais:**
 * [Instalação do Docker Engine](https://docs.docker.com/engine/installation/)
@@ -65,7 +86,7 @@ Não existe!
 * Rodar IIS no Linux
 * Rodar SQL Server 2000, 2005, 2008 ou 2012 no Linux
 * Rodar .NET Framewok Apps 2.0, 3.0, 3.5, 4.*, no Linux (há uma exceção, em relação ao .NET Standard, vale a pena ler detalhadamente a documentação)
-* Realizar o build de uma imagem e usá-la no windows *E* no linux
+* Utilizar uma mesma imagem com binários de uma só OSType/Architecture e utilizar em um servidor de outro OSType/Architecture.
 
 ## O que **É POSSÍVEL** fazer
 
