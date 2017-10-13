@@ -22,7 +22,7 @@ Como resultado, essa característica faz com que:
 * Containers de *OSType* "linux" sejam incompatíveis com servidores de *OSType* "windows". 
 * Containers de *OSType* "linux" e *arquitetura* "x86_64" sejam incompatíveis com containers do mesmo *OSType* mas *arquitetura* "armv7l"
 
-Essa incompatibilidade não está no Docker, mas sim na arquitetura do Kernel de cada uma dessas variações.
+Essa incompatibilidade não está no Docker, mas sim na arquitetura dos Kernels, que fazem com que os runtimes dependam de bibliotecas diferentes a cada variação.
 
 # Linux Containers
 
