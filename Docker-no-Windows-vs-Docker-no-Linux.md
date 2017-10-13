@@ -105,3 +105,7 @@ Não existe!
 6. Para projetos Java, Node, Python (semelhante a item 3).
 7. Rodar SQL Server **2016** no Linux
 
+
+# Notas sobre a evolução do projeto
+
+1. Em Setembro/2017 um esforço foi feito para unificar repositórios de imagens afins. Não está claro quais projetos foram unificados, no entanto o esforço consistiu em unificar repositórios Windows, Linux e ARM. A distinção entre o tipo de imagem ficou a cargo das tags de cada produto.
