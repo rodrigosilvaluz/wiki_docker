@@ -13,6 +13,8 @@ A Docker não é um substituto para LXC. "LXC" refere-se a recursos do kernel do
 
 * _Versioning_. O Docker inclui recursos semelhantes a git para rastrear versões sucessivas de um contêiner, inspecionando o diff entre as versões, cometendo novas versões, retrocedendo etc. O histórico também inclui como um contêiner foi montado e por quem, para obter a rastreabilidade completa do servidor de produção. O Docker também implementa downloads e uploads incrementais, semelhante ao git pull, então as novas versões de um contêiner podem ser transferidas enviando apenas diffs.
 
+***
+
 *  **(PENDENTE DE REVISÃO)** Reutilização de componentes. Qualquer recipiente pode ser usado como uma "imagem pai" para criar componentes mais especializados. Isso pode ser feito manualmente ou como parte de uma compilação automatizada. Por exemplo, você pode preparar o ambiente Python ideal e usá-lo como base para 10 aplicativos diferentes. Sua configuração ideal do PostgreSQL pode ser reutilizada para todos os seus futuros projetos. E assim por diante. **(PENDENTE DE REVISÃO)**
 
 *  **(PENDENTE DE REVISÃO)** Compartilhando. O Docker tem acesso a um registro público no Docker Hub, onde milhares de pessoas enviaram imagens úteis: qualquer coisa, desde Redis, CouchDB, PostgreSQL para IRC, bouncers para servidores de aplicativos Rails para o Hadoop para basear imagens para várias distros Linux. O registro também inclui uma "biblioteca padrão" oficial de contêineres úteis mantidos pela equipe Docker. O próprio registro é de código aberto, para que qualquer um possa implantar seu próprio registro para armazenar e transferir contêineres privados, para implementações de servidor interno, por exemplo. **(PENDENTE DE REVISÃO)**
