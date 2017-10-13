@@ -7,6 +7,8 @@ O KB foi destinado a guardar uma base de conhecimento variada contendo soluçõe
 
 [[Docker for Windows vs Docker for Linux|Docker-no-Windows-vs-Docker-no-Linux]]
 
+[[Docker vs LXC|Docker-vs-LXC]]
+
 [[Posso criar uma imagem LAMP? (Linux, Apache, MySQL and PHP)|FAQ-Docker-LAMP]]
 
 [[Download de imagens está lento. O que fazer?|Download-lento-de-Imagens]]
