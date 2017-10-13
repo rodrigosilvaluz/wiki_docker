@@ -30,13 +30,19 @@ São containers baseados em binários linux.
 
 ## Linux Containers no Windows 
 
-[Docker for Windows](https://docs.docker.com/docker-for-windows/install/) utiliza OBRIGATORIAMENTE Hyper-v para hospedar uma máquina virtual Linux, onde seus containers serão executados. Diferente do Docker Toolbox que usava Oracle Virtualbox, o [Docker for Windows](https://docs.docker.com/docker-for-windows/install/) utiliza o Microsoft Hyper-v. Note que ao habilitar o Hyper-v, o Virtualbox deixa de funcionar.
+[Docker for Windows](https://docs.docker.com/docker-for-windows/install/) utiliza OBRIGATORIAMENTE Hyper-v para hospedar o Kernel do Linux em uma máquina virtual, onde seus containers serão executados. Diferente do Docker Toolbox que usava Oracle Virtualbox, o [Docker for Windows](https://docs.docker.com/docker-for-windows/install/) utiliza o Microsoft Hyper-v. 
+
+> Note que ao habilitar o Hyper-v, o Virtualbox deixa de funcionar.
 
 Mesmo com Windows Containers, não é possível executar Containers Linux no Windows sem Virtualização (antigamente com Virtualbox, hoje com Hyper-v).
 
-> Com o avanço do [Windows Subsystem for Linux](http://luizcarlosfaria.net/blog/windows-subsystem-for-linux/) _HIPOTETICAMENTE_ poderíamos vislumbrar a execução do containers linux, sob o kernel do windows, emulando o kernel linux com o WSL. Mas isso é apenas um sonho. Não há o menor direcionamento da Microsoft que aponte ou sequer sugira que isso será possível um dia. Hoje mesmo implementando Kernel 4.x não é possível.
->
+> Com o avanço do [Windows Subsystem for Linux](http://luizcarlosfaria.net/blog/windows-subsystem-for-linux/) _HIPOTETICAMENTE_ poderíamos vislumbrar a execução do containers linux, sob o kernel do windows, emulando o kernel linux com o WSL. Mas isso é apenas um sonho. A única menção que temos em que a Microsoft se pronuncia sobre a possibilidade de executar Docker no Windows Subsystem For Linux se deu em um dos [Q&A`s do Microsoft Build 2017, Jack Hammons Program Manager do WSL na Microsoft, responde essa pergunta, enviado pela audiência](http://luizcarlosfaria.net/blog/docker-on-windows-subsystem-linux/).
 > 
+
+Os anúncios:
+* [Sneak peek #3: Windows Server, version 1709 for developers](https://blogs.technet.microsoft.com/windowsserver/2017/09/13/sneak-peek-3-windows-server-version-1709-for-developers/)
+* [PREVIEW: LINUX CONTAINERS ON WINDOWS](https://blog.docker.com/2017/09/preview-linux-containers-on-windows/)
+Ambos realizados em Setembro de 2017 não mudam essa condição.
 
 **Leia mais**:
 * [WSL Blog](https://blogs.msdn.microsoft.com/wsl/)
