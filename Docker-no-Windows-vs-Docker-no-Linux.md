@@ -22,7 +22,7 @@ Como resultado, essa característica faz com que:
 * Containers de *OSType* "linux" sejam incompatíveis com servidores de *OSType* "windows". 
 * Containers de *OSType* "linux" e *arquitetura* "x86_64" sejam incompatíveis com containers do mesmo *OSType* mas *arquitetura* "armv7l"
 
-Essa incompatibilidade não está no Docker, mas sim na arquitetura dos Kernels, que fazem com que os runtimes dependam de bibliotecas diferentes a cada variação.
+Essa incompatibilidade não está no Docker, mas nos runtimes não conseguem abstrair o kernel, um binário (runtime) que interaja com o Kernel não consegue ser agnóstico. Nos casos de linguagem gerenciada, temos um cenário semelhante. O runtime depende do kernel, o binário da aplicação depende de uma linguagem intermediária. Isso pode ser visto com clareza no Bytecode do Java e na IL do .NET.
 
 # Linux Containers
 
