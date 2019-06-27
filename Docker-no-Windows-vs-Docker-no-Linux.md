@@ -7,7 +7,7 @@ Docker é dividido em **cliente** e **servidor**, no linux isso fica claro com o
 Ao analisar os tipos de containers existentes no universo do Docker, temos de ter em mente 2 elementos:
 
 * OSType: Windows, Linux
-* Architecture: x86_64 e armv7l
+* Architecture: x86_64 e ARM 64 (lista completa em [**Architectures other than amd64**](https://github.com/docker-library/official-images#architectures-other-than-amd64))
 
 Que geram as seguintes variações OSType/Architecture:
 * Linux/x86_64
