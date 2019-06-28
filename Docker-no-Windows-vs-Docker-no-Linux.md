@@ -109,7 +109,7 @@ Não existe!
 ## O que **não** vai acontecer!
 
 * Rodar IIS no Linux
-* Rodar SQL Server 2000, 2005, 2008 ou 2012 no Linux
+* Rodar SQL Server 2000, 2005, 2008 ou 2012 (versões inferiores à versão 2016) no Linux
 * Rodar .NET Framewok Apps 2.0, 3.0, 3.5, 4.*, no Linux
 * Utilizar uma mesma imagem com binários de uma só OSType/Architecture e utilizar em um servidor de outro OSType/Architecture.
 
@@ -122,7 +122,7 @@ Não existe!
 5. Para projetos .NET Core, gerar 2 imagens (windows e linux) e escolher em qual host rodar!
 6. Para projetos .NET Framewok Apps 2.0, 3.0, 3.5, 4.* rodar em Windows Containers. Sob a imagem do [Nano Server](https://hub.docker.com/r/microsoft/nanoserver/) ou [Windows Server Core](https://hub.docker.com/r/microsoft/windowsservercore/).
 7. Para projetos Java, Node, Python (semelhante a item 4).
-8. Rodar SQL Server **2016** no Linux
+8. Rodar SQL Server **2016** e superiores no Linux
 
 
 # Notas sobre a evolução do projeto
