@@ -117,11 +117,12 @@ Não existe!
 
 1. Rodar Imagens Windows no Windows.
 2. Rodar Imagens Linux no Linux.
-3. Para os produtos/ferramentas/sdk's que possuem distribuições para Windows e Linux, escolher qual imagem usar de acordo com o tipo de host que pretende usar.
-4. Para projetos .NET Core, gerar 2 imagens (windows e linux) e escolher em qual host rodar!
-5. Para projetos .NET Framewok Apps 2.0, 3.0, 3.5, 4.* rodar em Windows Containers. Sob a imagem do [Nano Server](https://hub.docker.com/r/microsoft/nanoserver/) ou [Windows Server Core](https://hub.docker.com/r/microsoft/windowsservercore/).
-6. Para projetos Java, Node, Python (semelhante a item 3).
-7. Rodar SQL Server **2016** no Linux
+3. Rodar Imagens Linux no Windows com o auxílio de Virtualização (Docker Toolbox usa Virtualbox, Docker for Windows/Docker Desktop/WSL2 usam Hyper-v).
+4. Para os produtos/ferramentas/sdk's que possuem distribuições para Windows e Linux, escolher qual imagem usar de acordo com o tipo de host que pretende usar.
+5. Para projetos .NET Core, gerar 2 imagens (windows e linux) e escolher em qual host rodar!
+6. Para projetos .NET Framewok Apps 2.0, 3.0, 3.5, 4.* rodar em Windows Containers. Sob a imagem do [Nano Server](https://hub.docker.com/r/microsoft/nanoserver/) ou [Windows Server Core](https://hub.docker.com/r/microsoft/windowsservercore/).
+7. Para projetos Java, Node, Python (semelhante a item 4).
+8. Rodar SQL Server **2016** no Linux
 
 
 # Notas sobre a evolução do projeto
