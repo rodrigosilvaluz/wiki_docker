@@ -14,6 +14,24 @@ Que geram as seguintes variações OSType/Architecture:
 * Linux/armv7l
 * Windows/x86_64 
 
+
+***
+## Lista completa
+
+-	Architectures officially **supported by Docker**, Inc. for running Docker: (see [download.docker.com](https://download.docker.com/linux/))
+	-	ARMv7 32-bit (`arm32v7`): https://hub.docker.com/u/arm32v7/
+	-	ARMv8 64-bit (`arm64v8`): https://hub.docker.com/u/arm64v8/
+	-	Linux x86-64 (`amd64`): https://hub.docker.com/u/amd64/
+	-	Windows x86-64 (`windows-amd64`): https://hub.docker.com/u/winamd64/
+-	Other architectures built by official images: (**but *not* officially supported by Docker**, Inc.)
+	-	ARMv5 32-bit (`arm32v5`): https://hub.docker.com/u/arm32v5/
+	-	ARMv6 32-bit (`arm32v6`): https://hub.docker.com/u/arm32v6/
+	-	IBM POWER8 (`ppc64le`): https://hub.docker.com/u/ppc64le/
+	-	IBM z Systems (`s390x`): https://hub.docker.com/u/s390x/
+	-	x86/i686 (`i386`): https://hub.docker.com/u/i386/
+
+***
+
 **A combinação entre OSType e Architecture cria uma segmentação forte entre os tipos de containers. Containers criados para um determinado OSType/Architecture são incompatíveis com qualquer outra variação de OSType ou Architecture** 
 
 Essa incompatibilidade surge pois cada variação OSType/Architecture precisa de dependências específicas do seu Kernel.
